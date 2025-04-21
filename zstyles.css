@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+li,a,button {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
+.NAVLINK{
+    list-style: none;
+}
+.NAVLINK li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.NAVLINK li a {
+    transition: all 0.3s ease 0s;
+}
+.NAVLINK li a:hover{
+    color: forestgreen;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgb(45, 210, 45);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: forestgreen;
+}
+
+.signature {
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+    order: 3;
+    margin-left: auto;
+}
+.hero {
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: "Montserrat",sans-serif;
+}
+
+.hero-content p{
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+
+}
+.herobtn {
+    background-color: white;
+    color: #4f46e5;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+.herobtn:hover {
+    background-color: #e0e7ff;
+  }
