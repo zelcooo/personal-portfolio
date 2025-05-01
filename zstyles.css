@@ -1,53 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
-}
-
-li,a,button {
-    font-family: "Montserrat",sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #ecf0f1;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
     text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
 }
-header{
+li a {
+   position: relative;
+   color: white;
+   font-weight: 300;
+}
+.h1{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;
     align-items: center;
-    padding: 30px 10%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    z-index: 1000;
+}
 
+.logo{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 .NAVLINK{
-    list-style: none;
-}
-.NAVLINK li {
-    display: inline-block;
-    padding: 0px 20px;
+    gap: 2rem;
+    display: flex;
 }
 
-.NAVLINK li a {
-    transition: all 0.3s ease 0s;
+li a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(to right, #D1913C,#FFD194);
 }
-.NAVLINK li a:hover{
-    color: forestgreen;
+
+li a:hover::before{
+    width: 100%;
 }
-button{
-    padding: 9px 25px;
-    background-color: rgb(45, 210, 45);
+
+.visit-button{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
     border: none;
-    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    text-wrap: nowrap;
+    transition-timing-function: 0.3 ease-in-out;
+    background: linear-gradient(to right, #D1913C,#FFD194);
+
 }
 
-button:hover{
-    background-color: forestgreen;
+.visit-button:hover{
+    transform: scale(1.03);
+    background: linear-gradient(to right, #FFD194,#D1913C);
 }
+
+#menu-icon{
+    font-size: 2rem;
+    display: none;
+}
+
+/* the end of the header section */
+
+/*start of about me section*/
 
 .signature {
     cursor: pointer;
@@ -87,4 +130,9 @@ button:hover{
   
 .herobtn:hover {
     background-color: #e0e7ff;
+  }
+
+  .zecarias{
+    height: 300px;
+    width: 250px;
   }
