@@ -92,47 +92,84 @@ li a:hover::before{
 
 /*start of about me section*/
 
-.signature {
-    cursor: pointer;
-    width: 150px;
-    height: auto;
-    order: 3;
-    margin-left: auto;
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
 }
-.hero {
-    height: 100vh;
-    color: white;
+.about{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.about .abt-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 0 2rem;
-  }
-.hero-content h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: "Montserrat",sans-serif;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.hero-content p{
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-
+.info h1{
+    font-size: 4rem;
+    font-weight: 600;
 }
-.herobtn {
-    background-color: white;
-    color: #4f46e5;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-.herobtn:hover {
-    background-color: #e0e7ff;
-  }
+.info h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
 
-  .zecarias{
-    height: 300px;
-    width: 250px;
-  }
+.info span{
+    font-size: 2rem;
+    background: linear-gradient(to right, #D1913C,#FFD194);
+}
+
+.buttongroup1{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    border-radius: 3rem;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.socials i{
+    font-size: 2.5rem;;
+    cursor:pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.socials{
+    display: flex;
+    gap: 2rem;
+}
+
+.socials i:hover{
+    transform: scale(1.2);
+}
