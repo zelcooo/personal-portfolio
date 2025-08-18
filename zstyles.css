@@ -114,6 +114,7 @@ section{
 .about img{
     width: 30vw;
     border-radius: 50%;
+    
 }
 
 .info{
@@ -672,3 +673,116 @@ footer ul li a{
 #about {
     scroll-margin-top: 100px;
   }
+
+  a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .form-group {
+    position: relative;
+    width: 100%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1.2rem 1rem 1.2rem 3.5rem;
+    font-size: 1.1rem;
+    border: 2px solid black;
+    border-radius: 2rem;
+    font-family: 'Montserrat';
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+  
+  textarea + i {
+    top: 1.2rem;
+    transform: none;
+  }
+  
+  .contact-form .btn {
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid black;
+    font-weight: 500;
+    background: linear-gradient(to right, #D1913C,#FFD194);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode .h1 {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode .btn,
+  .dark-mode .visit-button {
+    background: linear-gradient(to right, #333, #555);
+    color: #f1f1f1;
+    border-color: white;
+  }
+  
+  .dark-mode .btn:hover,
+  .dark-mode .visit-button:hover {
+    background: white;
+    color: black;
+  }
+  
+  .dark-mode .grid-card:hover,
+  .dark-mode .project-card:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-mode input,
+  .dark-mode textarea {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    border-color: #777;
+  }
+  
+  .dark-mode input::placeholder,
+  .dark-mode textarea::placeholder {
+    color: #aaa;
+  }
+  
